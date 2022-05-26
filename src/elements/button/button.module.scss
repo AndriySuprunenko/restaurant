@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+.button {
+  padding: 20px;
+  font-size: $fs-button;
+  cursor: pointer;
+  &__black {
+    background-color: $c-default;
+    border: 2px solid $c-gold;
+    color: $c-white;
+  }
+  &__gold {
+    background-color: $c-gold;
+    border: 2px solid $c-gold;
+    color: $c-default;
+  }
+  &__white_gold {
+    background-color: $c-white;
+    border: 2px solid $c-gold;
+    color: $c-gold;
+  }
+  &__white_black {
+    background-color: $c-white;
+    border: 2px solid $c-white;
+    color: $c-black;
+  }
+  &__black_gold {
+    background-color: $c-default;
+    border: 2px solid $c-gold;
+    color: $c-gold;
+  }
+}

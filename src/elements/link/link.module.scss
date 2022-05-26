@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+.link {
+  color: $c-white;
+  text-decoration: none;
+  font-size: $fs-text;
+  &:hover {
+    color: $c-gold;
+  }
+  &__gold {
+    color: $c-gold;
+  }
+}

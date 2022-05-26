@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.header {
+  background-color: $c-default;
+  &__button {
+    max-width: 295px;
+  }
+  &__logo {
+    max-width: 380px;
+  }
+  &__line {
+    color: $c-space;
+  }
+}
+
+.logo_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+  padding: 50px 40px;
+}
