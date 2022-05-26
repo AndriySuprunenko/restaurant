@@ -1,0 +1,79 @@
+@import '../../styles/variables';
+.home {
+  display: flex;
+  flex-direction: column;
+  background-color: $c-home-bc;
+  padding: 100px 40px 60px 40px;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    padding: 85px 40px 125px 40px;
+    max-width: 1440px;
+    margin: auto;
+  }
+  &__image {
+    max-width: 745px;
+    margin-right: 20px;
+  }
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 570px;
+    &_blocks {
+      display: flex;
+    }
+    &_block {
+      display: flex;
+      flex-direction: column;
+      margin-right: 15px;
+    }
+    &_title {
+      color: $c-default;
+      font-size: $fs-home-title;
+    }
+    &_text {
+      color: $c-default;
+      font-size: $fs-text;
+      margin-top: 15px;
+    }
+    &_name {
+      color: $c-default;
+      font-size: $fs-text;
+    }
+    &_img {
+      margin-top: 20px;
+    }
+    &_image {
+      max-width: 200px;
+      margin-top: 15px;
+    }
+  }
+}
+
+.aboute_us {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  &__block {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    max-width: 85px;
+    max-height: 85px;
+    margin-right: 20px;
+  }
+  &__data {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: $fs-subtitle;
+    color: $c-default;
+  }
+  &__text {
+    font-size: $fs-text;
+    color: $c-default;
+  }
+}
