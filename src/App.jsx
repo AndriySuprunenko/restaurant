@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Navigation from "./components/header/Navigation";
 import Home from "./components/home/Home";
 import Menu from "./components/menu/Menu";
+import Slider from "./components/slider/Slider";
 import './styles/index.scss';
 
 // App
@@ -15,6 +16,7 @@ const App = () => {
       <Banner></Banner>
       <Home></Home>
       <Menu></Menu>
+      <Slider></Slider>
     </div>
   );
 };

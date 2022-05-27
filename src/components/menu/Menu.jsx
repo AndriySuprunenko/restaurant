@@ -2,17 +2,17 @@
 import Button from '../../elements/button/Button';
 import styles from './menu.module.scss';
 import { ButtonTypes } from '../../types/Button';
-import Cart_2 from '../../img/cart-2.png';
-import Menu_1 from '../../img/menu-1.png';
-import Menu_2 from '../../img/menu-2.png';
-import Menu_3 from '../../img/menu-3.png';
-import Menu_4 from '../../img/menu-4.png';
-import Menu_5 from '../../img/menu-5.png';
-import Menu_6 from '../../img/menu-6.png';
-import Menu_7 from '../../img/menu-7.png';
-import Menu_8 from '../../img/menu-8.png';
-import Menu_9 from '../../img/menu-9.png';
-import Menu_10 from '../../img/menu-10.png';
+import Cart_2 from '../../assets/images/cart-2.png';
+import Menu_1 from '../../assets/images/menu-1.png';
+import Menu_2 from '../../assets/images/menu-2.png';
+import Menu_3 from '../../assets/images/menu-3.png';
+import Menu_4 from '../../assets/images/menu-4.png';
+import Menu_5 from '../../assets/images/menu-5.png';
+import Menu_6 from '../../assets/images/menu-6.png';
+import Menu_7 from '../../assets/images/menu-7.png';
+import Menu_8 from '../../assets/images/menu-8.png';
+import Menu_9 from '../../assets/images/menu-9.png';
+import Menu_10 from '../../assets/images/menu-10.png';
 
 // Menu
 const Menu = () => {

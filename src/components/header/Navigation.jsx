@@ -1,9 +1,9 @@
 import styles from './navigation.module.scss';
 import Link from '../../elements/link/Link';
-import Instagram from '../../img/instagram.png';
-import Facebook from '../../img/facebook.png';
-import Twitter from '../../img/twitter.png';
-import Pinterest from '../../img/pinterest.png';
+import Instagram from '../../assets/images/instagram.png';
+import Facebook from '../../assets/images/facebook.png';
+import Twitter from '../../assets/images/twitter.png';
+import Pinterest from '../../assets/images/pinterest.png';
 
 const Navigation = () => {
   return (

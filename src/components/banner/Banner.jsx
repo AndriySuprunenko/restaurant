@@ -2,8 +2,8 @@
 import Button from '../../elements/button/Button';
 import styles from './banner.module.scss';
 import { ButtonTypes } from '../../types/Button';
-import Decor from '../../img/decor.png';
-import Baner from '../../img/banner.png';
+import Decor from '../../assets/images/decor.png';
+import Baner from '../../assets/images/banner.png';
 
 // Banner
 const Banner = () => {
