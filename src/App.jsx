@@ -5,6 +5,7 @@ import Navigation from "./components/header/Navigation";
 import Home from "./components/home/Home";
 import Menu from "./components/menu/Menu";
 import Slider from "./components/slider/Slider";
+import Offers from "./components/offers/Offers";
 import './styles/index.scss';
 
 // App
@@ -17,6 +18,7 @@ const App = () => {
       <Home></Home>
       <Menu></Menu>
       <Slider></Slider>
+      <Offers></Offers>
     </div>
   );
 };
