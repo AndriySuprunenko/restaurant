@@ -1,11 +1,73 @@
-.container {
-  height: 1000px;
-}
+@import '../../styles/variables';
 
 .slider {
+  width: 100%;
+  background-color: $c-default;
+  padding: 140px 40px;
+  &__block {
+    margin-bottom: 40px;
+  }
+  &__title {
+    border-bottom: 1px solid $c-gold;
+    border-top: 1px solid $c-gold;
+    padding-top: 5px;
+    width: fit-content;
+    font-size: $fs-menu;
+    color: $c-white;
+  }
+  &__subtitle {
+    font-size: $fs-home-title;
+    color: $c-white;
+    margin-top: 10px;
+  }
+  &__text {
+    color: $c-white;
+    font-size: $fs-text;
+    margin-top: 15px;
+  }
+}
+
+.container {
   max-width: 1440px;
   margin: 0 auto;
-  &_img {
-    max-width: 500px;
+}
+
+.swiper {
+  width: 100%;
+  position: static;
+  &__cart {
+    background-color: $c-slider;
+    max-width: 545px;
+    padding: 0 50px;
+    &_header {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__avatar {
+    max-width: 115px;
+    position: relative;
+    margin-right: 30px;
+    &_dec {
+      max-width: 30px;
+      position: absolute;
+    }
+  }
+  &__name {
+    color: $c-white;
+    font-size: $fs-subtitle;
+  }
+  &__city {
+    color: $c-gold;
+    font-size: $fs-text;
+  }
+  &__line {
+    color: $c-space;
+    border: 1px solid $c-space;
+  }
+  &__text {
+    font-size: $fs-slider-text;
+    margin-top: 30px;
+    color: $c-white;
   }
 }
