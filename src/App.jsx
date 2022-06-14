@@ -7,6 +7,7 @@ import Menu from "./components/menu/Menu";
 import Slider from "./components/slider/Slider";
 import Offers from "./components/offers/Offers";
 import './styles/index.scss';
+import WhatWeOffer from "components/what-we-offer/WhatWeOffer";
 
 // App
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
       <Menu></Menu>
       <Slider></Slider>
       <Offers></Offers>
+      <WhatWeOffer></WhatWeOffer>
     </div>
   );
 };

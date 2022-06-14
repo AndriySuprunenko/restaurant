@@ -1,0 +1,66 @@
+@import '../../styles/variables';
+
+.what_we_offer {
+  width: 100%;
+  background-color: $c-default;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 140px 40px;
+}
+
+.text {
+  width: 100%;
+  max-width: 450px;
+  &__title {
+    border-bottom: 1px solid $c-gold;
+    border-top: 1px solid $c-gold;
+    padding-top: 5px;
+    width: fit-content;
+    font-size: $fs-menu;
+    color: $c-white;
+  }
+  &__subtitle {
+    font-size: $fs-home-title;
+    width: fit-content;
+    color: $c-white;
+    margin-top: 10px;
+  }
+  &__text {
+    width: fit-content;
+    color: $c-white;
+    font-size: $fs-text;
+    margin-top: 15px;
+  }
+}
+
+.images {
+  width: 100%;
+  display: flex;
+  width: fit-content;
+  &__img {
+    max-width: 60px;
+  }
+  &__text {
+    color: $c-white;
+    margin-top: 15px;
+    font-size: $fs-slider-text;
+  }
+  &__block {
+    padding: 20px;
+    background-color: $c-slider;
+    width: fit-content;
+    margin-right: 30px;
+  }
+  &__block2 {
+    padding: 45px 20px;
+    background-color: $c-default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
