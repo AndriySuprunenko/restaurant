@@ -9,6 +9,7 @@ import Offers from "./components/offers/Offers";
 import './styles/index.scss';
 import WhatWeOffer from "components/what-we-offer/WhatWeOffer";
 import Blog from "components/blog/Blog";
+import Form from "components/form/Form";
 
 // App
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
       <Offers></Offers>
       <WhatWeOffer></WhatWeOffer>
       <Blog></Blog>
+      <Form></Form>
     </div>
   );
 };
