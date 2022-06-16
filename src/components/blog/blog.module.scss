@@ -1,0 +1,66 @@
+@import '../../styles/variables';
+
+.blog {
+  width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 145px 55px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    border-bottom: 1px solid $c-gold;
+    border-top: 1px solid $c-gold;
+    padding-top: 5px;
+    width: fit-content;
+    font-size: $fs-menu;
+    color: $c-default;
+    margin-right: 30px;
+  }
+  &__subtitle {
+    font-size: $fs-home-title;
+    width: fit-content;
+    color: $c-default;
+    margin-top: 10px;
+  }
+  &__text {
+    width: fit-content;
+    color: $c-default;
+    font-size: $fs-text;
+    margin-top: 15px;
+  }
+}
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  &__block {
+    max-width: 640px;
+    position: relative;
+    border: 1px solid $c-silver;
+  }
+  &__images {
+    height: fit-content;
+  }
+  &__button {
+    max-width: 640px;
+    position: absolute;
+    padding: 158px 210px;
+    background-color: rgba($color: $c-black, $alpha: 0.6);
+    top: 0px;
+  }
+  &__text {
+    padding: 50px;
+  }
+  &__title {
+    display: flex;
+  }
+}

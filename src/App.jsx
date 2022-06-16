@@ -8,6 +8,7 @@ import Slider from "./components/slider/Slider";
 import Offers from "./components/offers/Offers";
 import './styles/index.scss';
 import WhatWeOffer from "components/what-we-offer/WhatWeOffer";
+import Blog from "components/blog/Blog";
 
 // App
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
       <Slider></Slider>
       <Offers></Offers>
       <WhatWeOffer></WhatWeOffer>
+      <Blog></Blog>
     </div>
   );
 };
