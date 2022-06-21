@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.form {
+  width: 100%;
+  // background-color: $c-default;
+  position: relative;
+  &__image {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}

@@ -1,11 +1,16 @@
+import Formik from './Formik';
 import styles from './form.module.scss';
-
+import Cart from '../../assets/images/cart-10.png';
 
 const Form = () => {
   return(
-    <h1>
-    </h1>
-  );
-};
+    <section className={styles.form}>
+      <div className={styles.form__image}>
+        <img src={Cart} alt="img" />
+      </div>
+      <Formik></Formik>
+    </section>
+  )
+}
 
 export default Form;

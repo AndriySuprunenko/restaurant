@@ -1,0 +1,70 @@
+@import '../../styles/variables';
+
+.formik {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 920px;
+  margin: 0 auto;
+  background-color: rgba($color: $c-default, $alpha: 0.9);
+  padding: 140px 0;
+  position: absolute;
+  top: 140px;
+  right: 0;
+  left: 0;
+  &__title {
+    border-bottom: 1px solid $c-gold;
+    border-top: 1px solid $c-gold;
+    padding-top: 5px;
+    width: fit-content;
+    font-size: $fs-menu;
+    color: $c-white;
+    margin-right: 30px;
+  }
+  &__subtitle {
+    font-size: $fs-home-title;
+    width: fit-content;
+    color: $c-white;
+    margin-top: 10px;
+  }
+}
+
+.input_width1 {
+  width: 300px;
+}
+.input_width2 {
+  width: 200px;
+}
+
+.input {
+  padding: 25px;
+  background-color: rgba($color: $c-default, $alpha: 0.5);
+  color: $c-white;
+  font-size: $fs-button;
+  border: 1px solid $c-space;
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &::placeholder {
+    color: $c-white;
+    font-size: $fs-button;
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    max-width: 640px;
+    margin-top: 40px;
+  }
+}
+
+.button {
+  cursor: pointer;
+  display: block;
+  max-width: 250px;
+  padding: 20px 55px;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-size: $fs-button;
+}
