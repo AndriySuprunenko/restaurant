@@ -40,16 +40,17 @@ const Form = () => {
       <Formik
         initialValues={initialValues}
         validate={validate}
-        onSubmit={(values, { setSubmitting }) => {
+        onSubmit={(values, { setSubmitting, resetForm }) => {
+          alert(JSON.stringify(values, null, 2));
           setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
             setSubmitting(false);
+            resetForm();
           }, 400);
         }}
       >
         {({
           values,
-          // resetForm,
+          resetForm,
           errors,
           touched,
           handleChange,
