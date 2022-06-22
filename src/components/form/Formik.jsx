@@ -1,6 +1,7 @@
 import styles from './formik.module.scss';
 import { Formik } from 'formik';
-import classNames from 'classnames';
+import Input from 'elements/input/Input';
+import { InputTypes } from 'types/Input';
 
 const Form = () => {
   const initialValues = {
@@ -33,6 +34,14 @@ const Form = () => {
     return errors;
   };
 
+  const onSubmit = (values, { setSubmitting, resetForm }) => {
+    alert(JSON.stringify(values, null, 2));
+    setTimeout(() => {
+      setSubmitting(false);
+      resetForm();
+    }, 400);
+  };
+
   return (
     <div className={styles.formik}>
       <div className={styles.formik__title}>RESERVATION</div>
@@ -40,13 +49,7 @@ const Form = () => {
       <Formik
         initialValues={initialValues}
         validate={validate}
-        onSubmit={(values, { setSubmitting, resetForm }) => {
-          alert(JSON.stringify(values, null, 2));
-          setTimeout(() => {
-            setSubmitting(false);
-            resetForm();
-          }, 400);
-        }}
+        onSubmit={onSubmit}
       >
         {({
           values,
@@ -59,69 +62,66 @@ const Form = () => {
           isSubmitting,
         }) => (
           <form onSubmit={handleSubmit}>
-            <div className={styles.input__block}>
+            <div className={styles.block}>
               {/* Name */}
-              <input
+              <Input
                 type="text"
+                types={InputTypes.NAME}
                 name="name"
-                className={classNames(styles.input, styles.input_width1)}
                 placeholder="Name"
-                onChange={handleChange}
+                val={values.name}
                 onBlur={handleBlur}
-                value={values.name}
+                onChange={handleChange}
               />
               {errors.name && touched.name && errors.name}
 
               {/* Email */}
-              <input
+              <Input
                 type="email"
+                types={InputTypes.EMAIL}
                 name="email"
-                className={classNames(styles.input, styles.input_width1)}
                 placeholder="Email"
-                onChange={handleChange}
+                val={values.email}
                 onBlur={handleBlur}
-                value={values.email}
+                onChange={handleChange}
               />
               {errors.email && touched.email && errors.email}
             </div>
 
-            <div className={styles.input__block}>
+            <div className={styles.block}>
               {/* Persons */}
-              <input
-                type="number"
+              <Input
+                type="text"
+                types={InputTypes.PERSONS}
                 name="persons"
-                step={1}
-                min={1}
-                max={8}
-                className={classNames(styles.input, styles.input_width2)}
                 placeholder="Persons"
-                onChange={handleChange}
+                val={values.persons}
                 onBlur={handleBlur}
-                value={values.persons}
+                onChange={handleChange}
               />
               {errors.persons && touched.persons && errors.persons}
 
               {/* Timing */}
-              <input
+              <Input
                 type="text"
+                types={InputTypes.TIMING}
                 name="timing"
-                className={classNames(styles.input, styles.input_width2)}
                 placeholder="Timing"
-                onChange={handleChange}
+                val={values.timing}
                 onBlur={handleBlur}
-                value={values.timing}
+                onChange={handleChange}
               />
               {errors.timing && touched.timing && errors.timing}
 
               {/* Date */}
-              <input
+              <Input
                 type="text"
+                types={InputTypes.DATE}
                 name="date"
-                className={classNames(styles.input, styles.input_width2)}
                 placeholder="Date"
-                onChange={handleChange}
+                val={values.date}
                 onBlur={handleBlur}
-                value={values.date}
+                onChange={handleChange}
               />
               {errors.date && touched.date && errors.date}
             </div>

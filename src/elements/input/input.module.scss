@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+.input_width1 {
+  width: 300px;
+}
+.input_width2 {
+  width: 200px;
+}
+
+.input {
+  padding: 25px;
+  background-color: rgba($color: $c-default, $alpha: 0.5);
+  color: $c-white;
+  font-size: $fs-button;
+  border: 1px solid $c-space;
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &::placeholder {
+    color: $c-white;
+    font-size: $fs-button;
+  }
+}
