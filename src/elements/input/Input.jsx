@@ -2,9 +2,17 @@ import classNames from 'classnames';
 import { InputTypes } from 'types/Input';
 import styles from './input.module.scss';
 
-const Input = ({name, placeholder, types=InputTypes.NAME, type='text', val, onChange, onBlur}) => {
+const Input = ({
+  name,
+  placeholder,
+  types = InputTypes.NAME,
+  type = 'text',
+  val,
+  onChange,
+  onBlur,
+}) => {
   let typeClass;
-  switch (types){
+  switch (types) {
     case InputTypes.DATE: {
       typeClass = styles.input_width2;
       break;
