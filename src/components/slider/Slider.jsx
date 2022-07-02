@@ -9,7 +9,7 @@ import Decor from '../../assets/images/decor-2.png';
 import 'swiper/scss';
 import 'swiper/scss/pagination';
 
-const Slider = ({ slides }) => {
+const Slider = () => {
   return (
     <section className={styles.slider}>
       <div className={styles.container}>
@@ -26,8 +26,6 @@ const Slider = ({ slides }) => {
           spaceBetween={50}
           slidesPerView={2}
           pagination={{ clickable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
         >
           <SwiperSlide>
             <div className={styles.swiper__cart}>

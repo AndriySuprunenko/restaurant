@@ -36,3 +36,10 @@
   display: flex;
   width: fit-content;
 }
+
+.navigation {
+  display: flex;
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}

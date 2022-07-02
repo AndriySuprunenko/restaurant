@@ -15,21 +15,21 @@ const Form = () => {
   const validate = (values) => {
     const errors = {};
     if (!values.email) {
-      errors.email = 'Required';
+      errors.email = '';
     } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-      errors.email = 'Invalid email address';
+      errors.email = styles.errors;
     }
     if (!values.name) {
-      errors.name = 'Required';
+      errors.name = '';
     }
     if (!values.persons) {
-      errors.persons = 'Required';
+      errors.persons = '';
     }
     if (!values.timing) {
-      errors.timing = 'Required';
+      errors.timing = '';
     }
     if (!values.date) {
-      errors.date = 'Required';
+      errors.date = '';
     }
     return errors;
   };

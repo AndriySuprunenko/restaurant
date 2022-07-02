@@ -4,6 +4,7 @@ import Instagram from '../../assets/images/instagram.png';
 import Facebook from '../../assets/images/facebook.png';
 import Twitter from '../../assets/images/twitter.png';
 import Pinterest from '../../assets/images/pinterest.png';
+// import { slide as Menu } from 'react-burger-menu';
 
 const Navigation = () => {
   return (

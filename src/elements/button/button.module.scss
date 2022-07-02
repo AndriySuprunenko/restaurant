@@ -4,6 +4,10 @@
   padding: 20px;
   font-size: $fs-button;
   cursor: pointer;
+  @media screen and (max-width: $desktop) {
+    font-size: $fs-base;
+    padding: 10px;
+  }
   &__black {
     background-color: $c-default;
     border: 2px solid $c-gold;

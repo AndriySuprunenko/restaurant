@@ -21,4 +21,10 @@
     color: $c-white;
     font-size: $fs-button;
   }
+  &:invalid {
+    border: 1px solid red;
+  }
+  // &:required {
+  //   border: 1px solid red;
+  // }
 }

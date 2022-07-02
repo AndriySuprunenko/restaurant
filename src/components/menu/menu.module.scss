@@ -13,6 +13,11 @@
   max-width: 1440px;
   margin: auto;
   padding: 140px 40px;
+  @media screen and (max-width: $screen) {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
 }
 
 .special_dishes {
@@ -20,6 +25,11 @@
   flex-direction: column;
   max-width: 490px;
   margin-right: 20px;
+  @media screen and (max-width: $screen) {
+    max-width: 490px;
+    margin-right: 0;
+    margin: 0 auto;
+  }
   &__title {
     border-bottom: 1px solid $c-gold;
     border-top: 1px solid $c-gold;
@@ -42,15 +52,28 @@
     max-width: 400px;
     max-height: 550px;
     margin-top: 30px;
+    @media screen and (max-width: $screen) {
+      margin: 0 auto;
+      margin-top: 30px;
+    }
   }
   &__button {
     max-width: 255px;
     margin-top: 60px;
+    @media screen and (max-width: $screen) {
+      margin: 0 auto;
+      margin-top: 40px;
+    }
   }
 }
 
 .menu_block {
   max-width: 820px;
+  @media screen and (max-width: $screen) {
+    max-width: 820px;
+    margin-right: 0;
+    margin: 0 auto;
+  }
   &__string {
     display: flex;
     align-items: center;
@@ -70,10 +93,16 @@
     &_title {
       color: $c-default;
       font-size: $fs-subtitle;
+      @media screen and (max-width: $screen) {
+        font-size: $fs-slider-text;
+      }
     }
     &_text {
       color: $c-silver;
       font-size: $fs-text;
+      @media screen and (max-width: $screen) {
+        font-size: $fs-base;
+      }
     }
   }
   &__line {
@@ -90,5 +119,8 @@
     color: $c-default;
     font-size: $fs-subtitle;
     width: fit-content;
+    @media screen and (max-width: $screen) {
+      font-size: $fs-slider-text;
+    }
   }
 }

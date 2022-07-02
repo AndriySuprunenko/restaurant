@@ -20,7 +20,16 @@ $fs-button: 22px;
 $fs-slider-text: 24px;
 $fs-subtitle: 30px;
 $fs-home-title: 40px;
+$fs-home-s-title: 70px;
 $fs-title: 100px;
 
 // * Box Shadow
 $bs-normal: 0 0 10px 25px rgba($c-black, 0.3);
+
+// * Media Queries: Breakpoints
+$small: 320px;
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$screen: 1400px;
+$large: 1920px;

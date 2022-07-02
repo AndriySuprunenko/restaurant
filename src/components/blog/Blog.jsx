@@ -20,11 +20,13 @@ const Blog = () => {
         <div className={styles.news}>
           {/* Cart1 */}
           <div className={styles.news__block}>
-            <div className={styles.news__images}>
-              <img src={Cart1} alt="img" />
-            </div>
-            <div className={styles.news__button}>
-              <Button text="View More" type={ButtonTypes.GOLD} />
+            <div className={styles.block}>
+              <div className={styles.news__images}>
+                <img src={Cart1} alt="img" />
+              </div>
+              <div className={styles.news__button}>
+                <Button text="View More" type={ButtonTypes.GOLD} />
+              </div>
             </div>
 
             <div className={styles.news__text}>
@@ -45,11 +47,13 @@ const Blog = () => {
 
           {/* Cart2 */}
           <div className={styles.news__block}>
-            <div className={styles.news__images}>
-              <img src={Cart2} alt="img" />
-            </div>
-            <div className={styles.news__button}>
-              <Button text="View More" type={ButtonTypes.GOLD} />
+          <div className={styles.block}>
+              <div className={styles.news__images}>
+                <img src={Cart2} alt="img" />
+              </div>
+              <div className={styles.news__button}>
+                <Button text="View More" type={ButtonTypes.GOLD} />
+              </div>
             </div>
 
             <div className={styles.news__text}>
