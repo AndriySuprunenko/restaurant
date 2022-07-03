@@ -62,68 +62,70 @@ const Form = () => {
           isSubmitting,
         }) => (
           <form onSubmit={handleSubmit}>
-            <div className={styles.block}>
-              {/* Name */}
-              <Input
-                type="text"
-                types={InputTypes.NAME}
-                name="name"
-                placeholder="Name"
-                val={values.name}
-                onBlur={handleBlur}
-                onChange={handleChange}
-              />
-              {errors.name && touched.name && errors.name}
+            <div className={styles.castom_screen}>
+              <div className={styles.block}>
+                {/* Name */}
+                <Input
+                  type="text"
+                  types={InputTypes.NAME}
+                  name="name"
+                  placeholder="Name"
+                  val={values.name}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
+                />
+                {errors.name && touched.name && errors.name}
 
-              {/* Email */}
-              <Input
-                type="email"
-                types={InputTypes.EMAIL}
-                name="email"
-                placeholder="Email"
-                val={values.email}
-                onBlur={handleBlur}
-                onChange={handleChange}
-              />
-              {errors.email && touched.email && errors.email}
-            </div>
+                {/* Email */}
+                <Input
+                  type="email"
+                  types={InputTypes.EMAIL}
+                  name="email"
+                  placeholder="Email"
+                  val={values.email}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
+                />
+                {errors.email && touched.email && errors.email}
+              </div>
 
-            <div className={styles.block}>
-              {/* Persons */}
-              <Input
-                type="text"
-                types={InputTypes.PERSONS}
-                name="persons"
-                placeholder="Persons"
-                val={values.persons}
-                onBlur={handleBlur}
-                onChange={handleChange}
-              />
-              {errors.persons && touched.persons && errors.persons}
+              <div className={styles.block}>
+                {/* Persons */}
+                <Input
+                  type="text"
+                  types={InputTypes.PERSONS}
+                  name="persons"
+                  placeholder="Persons"
+                  val={values.persons}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
+                />
+                {errors.persons && touched.persons && errors.persons}
 
-              {/* Timing */}
-              <Input
-                type="text"
-                types={InputTypes.TIMING}
-                name="timing"
-                placeholder="Timing"
-                val={values.timing}
-                onBlur={handleBlur}
-                onChange={handleChange}
-              />
-              {errors.timing && touched.timing && errors.timing}
+                {/* Timing */}
+                <Input
+                  type="text"
+                  types={InputTypes.TIMING}
+                  name="timing"
+                  placeholder="Timing"
+                  val={values.timing}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
+                />
+                {errors.timing && touched.timing && errors.timing}
 
-              {/* Date */}
-              <Input
-                type="text"
-                types={InputTypes.DATE}
-                name="date"
-                placeholder="Date"
-                val={values.date}
-                onBlur={handleBlur}
-                onChange={handleChange}
-              />
-              {errors.date && touched.date && errors.date}
+                {/* Date */}
+                <Input
+                  type="text"
+                  types={InputTypes.DATE}
+                  name="date"
+                  placeholder="Date"
+                  val={values.date}
+                  onBlur={handleBlur}
+                  onChange={handleChange}
+                />
+                {errors.date && touched.date && errors.date}
+              </div>
             </div>
             {/* Button */}
             <button

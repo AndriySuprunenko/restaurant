@@ -13,6 +13,10 @@
   top: 140px;
   right: 0;
   left: 0;
+  @media screen and (max-width: $screen) {
+    top: 0;
+    padding: 10px;
+  }
   &__title {
     border-bottom: 1px solid $c-gold;
     border-top: 1px solid $c-gold;
@@ -35,6 +39,14 @@
   justify-content: space-between;
   max-width: 640px;
   margin-top: 40px;
+  @media screen and (max-width: $screen) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  @media screen and (max-width: $castom) {
+    justify-content: flex-start;
+  }
 }
 
 .button {
@@ -45,4 +57,18 @@
   margin: 0 auto;
   margin-top: 40px;
   font-size: $fs-button;
+  @media screen and (max-width: $desktop) {
+    font-size: $fs-base;
+    padding: 10px;
+    max-width: 200px;
+  }
+}
+
+.castom_screen {
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: $castom) {
+    display: flex;
+    flex-direction: row;
+  }
 }

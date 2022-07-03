@@ -2,9 +2,36 @@
 
 .input_width1 {
   width: 300px;
+  @media screen and (max-width: $screen) {
+    margin-top: 20px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  @media screen and (max-width: $desktop) {
+    margin-top: 5px;
+    width: 200px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }
 .input_width2 {
   width: 200px;
+  @media screen and (max-width: $screen) {
+    margin-top: 20px;
+    width: 300px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  @media screen and (max-width: $desktop) {
+    margin-top: 5px;
+    width: 200px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 }
 
 .input {
@@ -14,6 +41,10 @@
   font-size: $fs-button;
   border: 1px solid $c-space;
   margin-right: 20px;
+  @media screen and (max-width: $tablet) {
+    padding: 10px;
+    font-size: $fs-base;
+  }
   &:last-child {
     margin-right: 0;
   }
@@ -24,7 +55,4 @@
   &:invalid {
     border: 1px solid red;
   }
-  // &:required {
-  //   border: 1px solid red;
-  // }
 }
