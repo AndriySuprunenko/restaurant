@@ -17,7 +17,7 @@ import Menu_10 from '../../assets/images/menu-10.png';
 // Menu
 const Menu = () => {
   return (
-    <section className={styles.menu}>
+    <section className={styles.menu} id='sec-3'>
       <div className={styles.menu_container}>
         <div className={styles.special_dishes}>
           <div className={styles.special_dishes__title}>MENU</div>

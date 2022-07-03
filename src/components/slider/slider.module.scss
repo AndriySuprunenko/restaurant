@@ -4,6 +4,9 @@
   width: 100%;
   background-color: $c-default;
   padding: 140px 40px;
+  @media screen and (max-width: $desktop) {
+    padding: 40px;
+  }
   &__block {
     margin-bottom: 40px;
   }

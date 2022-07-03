@@ -8,7 +8,7 @@ import Signature from '../../assets/images/signature.png';
 
 const Home = () => {
   return (
-    <section className={styles.home}>
+    <section className={styles.home} id='sec-2'>
       {/* Aboute Us */}
       <div className={styles.aboute_us}>
         {/* Block */}

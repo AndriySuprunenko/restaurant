@@ -7,6 +7,9 @@
   @media screen and (max-width: $desktop) {
     padding: 40px;
   }
+  @media screen and (max-width: $phone) {
+    padding: 20px;
+  }
   &__block {
     display: flex;
     justify-content: space-between;
@@ -20,6 +23,9 @@
       max-width: fit-content;
       padding-top: 40px;
       padding-bottom: 0;
+    }
+    @media screen and (max-width: $phone) {
+      padding: 20px 0 20px 0;
     }
   }
   &__image {
@@ -92,6 +98,11 @@
     max-width: 85px;
     max-height: 85px;
     margin-right: 20px;
+    @media screen and (max-width: $phone) {
+      max-width: 55px;
+      max-height: 55px;
+      margin-right: 10px;
+    }
   }
   &__data {
     display: flex;
@@ -100,9 +111,17 @@
   &__title {
     font-size: $fs-subtitle;
     color: $c-default;
+    @media screen and (max-width: $phone) {
+      font-size: $fs-button;
+      color: $c-default;
+    }
   }
   &__text {
     font-size: $fs-text;
     color: $c-default;
+    @media screen and (max-width: $phone) {
+      font-size: $fs-base;
+      color: $c-default;
+    }
   }
 }

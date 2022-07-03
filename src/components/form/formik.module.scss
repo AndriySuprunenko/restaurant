@@ -14,8 +14,15 @@
   right: 0;
   left: 0;
   @media screen and (max-width: $screen) {
-    top: 0;
+    top: 50px;
     padding: 10px;
+  }
+  @media screen and (max-width: $tablet) {
+    top: 0;
+    background-color: rgba($color: $c-default, $alpha: 0.9);
+  }
+  @media screen and (max-width: $phone) {
+    background-color: $c-default;
   }
   &__title {
     border-bottom: 1px solid $c-gold;
@@ -25,12 +32,18 @@
     font-size: $fs-menu;
     color: $c-white;
     margin-right: 30px;
+    @media screen and (max-width: $phone) {
+      margin-right: 0;
+    }
   }
   &__subtitle {
     font-size: $fs-home-title;
     width: fit-content;
     color: $c-white;
     margin-top: 10px;
+    @media screen and (max-width: $phone) {
+      font-size: $fs-button;
+    }
   }
 }
 
@@ -70,5 +83,9 @@
   @media screen and (max-width: $castom) {
     display: flex;
     flex-direction: row;
+  }
+  @media screen and (max-width: $phone) {
+    display: flex;
+    flex-direction: column;
   }
 }

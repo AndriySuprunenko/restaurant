@@ -8,7 +8,7 @@ import Baner from '../../assets/images/banner.png';
 // Banner
 const Banner = () => {
   return (
-    <section className={styles.banner}>
+    <section className={styles.banner} id='sec-1'>
       <div className={styles.banner__container}>
         <div className={styles.banner__block}>
           <h1 className={styles.banner__title}>Welcome to Restaurant</h1>

@@ -6,7 +6,7 @@ import { ButtonTypes } from 'types/Button';
 
 const Blog = () => {
   return (
-    <section className={styles.blog}>
+    <section className={styles.blog} id='sec-5'>
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.header__title}>BLOG</div>

@@ -11,6 +11,9 @@
   @media screen and (max-width: $desktop) {
     padding: 55px;
   }
+  @media screen and (max-width: $phone) {
+    padding: 20px;
+  }
 }
 
 .header {
@@ -26,18 +29,27 @@
     font-size: $fs-menu;
     color: $c-default;
     margin-right: 30px;
+    @media screen and (max-width: $phone) {
+      margin-right: 20px;
+    }
   }
   &__subtitle {
     font-size: $fs-home-title;
     width: fit-content;
     color: $c-default;
     margin-top: 10px;
+    @media screen and (max-width: $phone) {
+      font-size: $fs-button;
+    }
   }
   &__text {
     width: fit-content;
     color: $c-default;
     font-size: $fs-text;
     margin-top: 15px;
+    @media screen and (max-width: $phone) {
+      font-size: $fs-base;
+    }
   }
 }
 
@@ -49,6 +61,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  @media screen and (max-width: $phone) {
+    margin-top: 20px;
   }
   &__block {
     max-width: 640px;
@@ -68,6 +83,18 @@
     position: absolute;
     top: 40%;
     left: 35%;
+    @media screen and (max-width: $tablet) {
+      max-width: 100%;
+      top: 40%;
+      left: 0;
+      padding: 0 80px 0 80px;
+    }
+    @media screen and (max-width: $phone) {
+      max-width: 100%;
+      top: 40%;
+      left: 0;
+      padding: 0 30px 0 30px;
+    }
   }
   &__text {
     padding: 50px;

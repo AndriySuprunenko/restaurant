@@ -4,9 +4,9 @@ import styles from './link.module.scss';
 import styleHeader from '../../components/header/navigation.module.scss';
 
 // Link
-const Link = ({text}) => {
+const Link = ({text, href}) => {
   return (
-    <a className={classNames(styles.link, styleHeader.link )} href='https://#'>
+    <a className={classNames(styles.link, styleHeader.link )} href={href}>
       <span>
         {text}
       </span>
