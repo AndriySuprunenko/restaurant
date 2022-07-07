@@ -10,6 +10,7 @@ import './styles/index.scss';
 import WhatWeOffer from "components/what-we-offer/WhatWeOffer";
 import Blog from "components/blog/Blog";
 import Form from "components/form/Form";
+import Footer from "components/footer/Footer";
 
 // App
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
       <WhatWeOffer></WhatWeOffer>
       <Blog></Blog>
       <Form></Form>
+      <Footer></Footer>
     </div>
   );
 };
