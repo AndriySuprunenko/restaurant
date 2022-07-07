@@ -46,3 +46,12 @@
     display: none;
   }
 }
+
+.burger {
+  // max-width: 30px;
+  width: fit-content;
+  display: none;
+  @media screen and (max-width: $desktop) {
+    display: block;
+  }
+}

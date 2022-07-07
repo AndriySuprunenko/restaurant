@@ -6,6 +6,7 @@ import Twitter from '../../assets/images/twitter.png';
 import Pinterest from '../../assets/images/pinterest.png';
 import { useEffect } from 'react';
 import './nav.css';
+import Burger from './Burger';
 // import { slide as Menu } from 'react-burger-menu';
 
 const Navigation = () => {
@@ -53,6 +54,10 @@ const Navigation = () => {
             <div className={styles.icon}>
               <img src={Pinterest} alt="pinterest" />
             </div>
+          </div>
+          {/* Burger */}
+          <div className={styles.burger}>
+            <Burger></Burger>
           </div>
         </div>
       </div>
