@@ -11,7 +11,7 @@ import 'swiper/scss/pagination';
 
 const Slider = () => {
   return (
-    <section className={styles.slider} id='sec-4'>
+    <section className={styles.slider} id="sec-4">
       <div className={styles.container}>
         <div className={styles.slider__block}>
           <div className={styles.slider__title}>TESTIMONIAL</div>

@@ -1,9 +1,9 @@
 @import '../../styles/variables';
 
 .slider {
-  width: 100%;
   background-color: $c-default;
-  padding: 140px 40px;
+  padding: 100px 40px;
+  width: 100%;
   @media screen and (max-width: $desktop) {
     padding: 40px;
   }
@@ -13,20 +13,20 @@
   &__title {
     border-bottom: 1px solid $c-gold;
     border-top: 1px solid $c-gold;
-    padding-top: 5px;
-    width: fit-content;
     font-size: $fs-menu;
+    width: fit-content;
+    padding-top: 5px;
     color: $c-white;
   }
   &__subtitle {
     font-size: $fs-home-title;
-    color: $c-white;
     margin-top: 10px;
+    color: $c-white;
   }
   &__text {
-    color: $c-white;
     font-size: $fs-text;
     margin-top: 15px;
+    color: $c-white;
   }
 }
 
@@ -36,37 +36,42 @@
 }
 
 .swiper {
-  width: 100%;
   position: static;
+  width: 100%;
   &__cart {
     background-color: $c-slider;
     max-width: 545px;
     padding: 0 50px;
+    margin: 0 auto;
+    margin-bottom: 100px;
     &_header {
-      display: flex;
       align-items: center;
+      display: flex;
     }
   }
   &__avatar {
-    max-width: 115px;
     position: relative;
     margin-right: 30px;
+    max-width: 115px;
     &_dec {
-      max-width: 30px;
       position: absolute;
+      max-width: 30px;
+    }
+    &_img {
+      border-radius: 50%;
     }
   }
   &__name {
-    color: $c-white;
     font-size: $fs-subtitle;
+    color: $c-white;
   }
   &__city {
-    color: $c-gold;
     font-size: $fs-text;
+    color: $c-gold;
   }
   &__line {
-    color: $c-space;
     border: 1px solid $c-space;
+    color: $c-space;
   }
   &__text {
     font-size: $fs-slider-text;
