@@ -5,7 +5,6 @@ import React from 'react';
 import 'swiper/scss';
 import 'swiper/scss/pagination';
 import Decor from '../../assets/images/decor-2.png';
-import './slider.scss';
 
 SwiperCore.use([Pagination]);
 
