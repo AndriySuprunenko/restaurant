@@ -5,7 +5,7 @@ import styles from './button.module.scss';
 
 
 // Button
-const Button = ({text, type=ButtonTypes.BLACK}) => {
+const Button = ({tipe='button',text, type=ButtonTypes.BLACK}) => {
   let typeClass;
   switch (type){
     case ButtonTypes.GOLD: {
@@ -31,7 +31,7 @@ const Button = ({text, type=ButtonTypes.BLACK}) => {
 
 
   return (
-    <button className={classNames(styles.button, typeClass)}><span>{text}</span></button>
+    <button type={tipe} className={classNames(styles.button, typeClass)}><span>{text}</span></button>
   );
 };
 

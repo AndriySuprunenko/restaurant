@@ -1,5 +1,5 @@
 import styles from './footer.module.scss';
-import Logo from '../../assets/images/logo.png';
+import Logo from '../../assets/images/LOGO.png';
 import Facebook from '../../assets/images/facebook.png';
 import Instagram from '../../assets/images/instagram.png';
 import Pinterest from '../../assets/images/pinterest.png';

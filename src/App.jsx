@@ -8,9 +8,7 @@ import Offers from "./components/offers/Offers";
 import './styles/index.scss';
 import WhatWeOffer from "components/what-we-offer/WhatWeOffer";
 import Blog from "components/blog/Blog";
-import Form from "components/form/Form";
 import Footer from "components/footer/Footer";
-import Reviews from "components/slider/Reviews";
 
 // App
 const App = () => {
@@ -21,11 +19,9 @@ const App = () => {
       <Banner></Banner>
       <Home></Home>
       <Menu></Menu>
-      <Reviews></Reviews>
       <Offers></Offers>
       <WhatWeOffer></WhatWeOffer>
       <Blog></Blog>
-      <Form></Form>
       <Footer></Footer>
     </div>
   );

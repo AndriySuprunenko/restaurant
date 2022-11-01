@@ -2,7 +2,7 @@
 import styles from './header.module.scss';
 import Button from '../../elements/button/Button';
 import { ButtonTypes } from '../../types/Button';
-import Logo from '../../assets/images/logo.png';
+import Logo from '../../assets/images/LOGO.png';
 
 // Header
 const Header = () => {
