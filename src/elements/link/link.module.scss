@@ -9,4 +9,9 @@
   &__gold {
     color: $c-gold;
   }
+  &__button_black{
+    background-color: $c-default;
+    border: 2px solid $c-gold;
+    color: $c-white;
+  }
 }
