@@ -3,14 +3,14 @@
 .header {
   background-color: $c-default;
   &__button {
-    max-width: 295px;
+    width: fit-content;
     @media screen and (max-width: $desktop) {
       max-width: 195px;
     }
   }
   &__logo {
     max-width: 380px;
-    margin: 20px;
+    margin: 0 auto;
   }
   &__line {
     color: $c-space;
@@ -19,11 +19,11 @@
 
 .logo_container {
   display: flex;
-  justify-content: space-between;
+  // justify-content: center;
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 50px 40px;
+  padding: 20px 40px;
   @media screen and (max-width: $tablet) {
     display: flex;
     flex-direction: column;
