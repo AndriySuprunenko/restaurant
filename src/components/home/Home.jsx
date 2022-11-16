@@ -8,7 +8,7 @@ import Signature from '../../assets/images/signature.png';
 
 const Home = () => {
   return (
-    <section className={styles.home} id='sec-2'>
+    <section className={styles.home} id="sec-2">
       {/* Aboute Us */}
       <div className={styles.aboute_us}>
         {/* Block */}
@@ -31,7 +31,7 @@ const Home = () => {
           <div className={styles.aboute_us__data}>
             <div className={styles.aboute_us__title}>Open Hours</div>
             <div className={styles.aboute_us__text}>
-              Mon To Fri 9:00 AM - 9:00 PM 
+              Mon To Fri 9:00 AM - 9:00 PM
             </div>
           </div>
         </div>
@@ -56,15 +56,22 @@ const Home = () => {
         </div>
         <div className={styles.home__texts}>
           <div className={styles.home__texts_title}>The Delicious Story</div>
-          <div className={styles.home__texts_text}>The people, food and the prime locations make the perfect place for the friends & family to come together and have great time.</div>
+          <div className={styles.home__texts_text}>
+            The people, food and the prime locations make the perfect place for
+            the friends & family to come together and have great time.
+          </div>
           <div className={styles.home__texts_blocks}>
             <div className={styles.home__texts_block}>
               <div className={styles.home__texts_title}>2018</div>
-              <div className={styles.home__texts_text}>Plan for this restaurant to deliver healthy food.</div>
+              <div className={styles.home__texts_text}>
+                Plan for this restaurant to deliver healthy food.
+              </div>
             </div>
             <div className={styles.home__texts_block}>
               <div className={styles.home__texts_title}>2022</div>
-              <div className={styles.home__texts_text}>Happily in the fourth year by fulfill the motto.</div>
+              <div className={styles.home__texts_text}>
+                Happily in the fourth year by fulfill the motto.
+              </div>
             </div>
           </div>
           <div className={styles.home__texts_img}>

@@ -1,5 +1,6 @@
 // Import
 import Button from '../../elements/button/Button';
+import '../header/nav.css';
 import styles from './banner.module.scss';
 import { ButtonTypes } from '../../types/Button';
 import Decor from '../../assets/images/decor.png';
@@ -8,12 +9,17 @@ import Baner from '../../assets/images/banner.png';
 // Banner
 const Banner = () => {
   return (
-    <section className={styles.banner} id='sec-1'>
-      <div className={styles.banner__container}>
+    <section className={styles.banner} id="sec-1">
+      <div className='container'>
         <div className={styles.banner__block}>
           <h1 className={styles.banner__title}>Welcome to Restaurant</h1>
-          <p className={styles.banner__text}>The people, food and the prime locations make the perfect place good friends & family to come together and have great time.</p>
-          <div className={styles.banner__button}><Button text='View Menu' type={ButtonTypes.BLACK_GOLD}/></div>
+          <p className={styles.banner__text}>
+            The people, food and the prime locations make the perfect place good
+            friends & family to come together and have great time.
+          </p>
+          <div className={styles.banner__button}>
+            <Button text="View Menu" type={ButtonTypes.BLACK_GOLD} />
+          </div>
         </div>
         <div className={styles.banner__block}>
           <hr className={styles.banner__frame_line} />

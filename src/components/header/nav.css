@@ -9,6 +9,25 @@
   padding-bottom: 0px;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.vidstup {
+  margin-top: 89px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .hamb {
   display: flex;
   align-items: center;
@@ -49,10 +68,10 @@
   transform: rotate(45deg) translate(10px, 4px);
 }
 
-.hamb__field.open span:nth-child(2){
+.hamb__field.open span:nth-child(2) {
   opacity: 0;
 }
 
-.hamb__field.open span:nth-child(3){
+.hamb__field.open span:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -1px);
 }

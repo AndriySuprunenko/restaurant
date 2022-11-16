@@ -19,10 +19,14 @@ const Navigation = () => {
   /* Method that will fix header after a specific scrollable */
   const isSticky = (e) => {
     const header = document.querySelector('.header-section');
+    const banner = document.querySelector('#sec-1');
     const scrollTop = window.scrollY;
     scrollTop >= 250
       ? header.classList.add('is-sticky')
       : header.classList.remove('is-sticky');
+    scrollTop >= 250
+      ? banner.classList.add('vidstup')
+      : banner.classList.remove('vidstup');
   };
 
   return (

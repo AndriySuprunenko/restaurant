@@ -6,17 +6,6 @@
   @media screen and (max-width: $desktop) {
     padding: 40px 20px 0 20px;
   }
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1440px;
-    margin: auto;
-    @media screen and (max-width: $desktop) {
-      display: flex;
-      flex-direction: column;
-    }
-  }
   &__block {
     display: flex;
     flex-direction: column;
