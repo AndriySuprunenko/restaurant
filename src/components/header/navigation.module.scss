@@ -29,7 +29,10 @@
 .icons {
   display: flex;
   width: 100%;
-  justify-content: end;
+  justify-content: flex-end;
+  @media screen and (max-width: $desktop) {
+    justify-content: flex-start;
+  }
 }
 
 .numbers {
@@ -54,7 +57,6 @@
 }
 
 .burger {
-  // max-width: 30px;
   width: fit-content;
   display: none;
   @media screen and (max-width: $desktop) {
