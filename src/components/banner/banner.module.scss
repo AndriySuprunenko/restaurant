@@ -7,10 +7,10 @@
     padding: 40px 20px 0 20px;
   }
   &__block {
-    display: flex;
     flex-direction: column;
-    max-width: 655px;
     margin-right: 20px;
+    max-width: 655px;
+    display: flex;
     @media screen and (max-width: $desktop) {
       margin-right: 0;
       &:last-child {
@@ -19,79 +19,79 @@
     }
   }
   &__title {
-    color: $c-white;
-    font-size: $fs-title;
     max-width: fit-content;
+    font-size: $fs-title;
+    color: $c-white;
     @media screen and (max-width: $desktop) {
       font-size: $fs-home-s-title;
-      margin: 0 auto;
       max-width: fit-content;
+      margin: 0 auto;
     }
     @media screen and (max-width: $tablet) {
       font-size: $fs-home-title;
     }
   }
   &__text {
-    color: $c-white;
     max-width: fit-content;
     font-size: $fs-text;
     margin-top: 25px;
+    color: $c-white;
   }
   &__button {
+    margin-bottom: 30px;
     max-width: 230px;
     margin-top: 35px;
-    margin-bottom: 30px;
     @media screen and (max-width: $desktop) {
       max-width: 130px;
-      margin: auto;
       margin-top: 20px;
+      margin: auto;
     }
   }
   &__img {
-    max-width: 595px;
     max-height: 740px;
+    max-width: 595px;
     margin: auto;
   }
   &__frame {
-    position: relative;
-    border-left: 30px solid $c-space;
     border-right: 30px solid $c-space;
+    border-left: 30px solid $c-space;
     padding: 30px 30px 0 30px;
+    position: relative;
     @media screen and (max-width: $desktop) {
-      border-left: 20px solid $c-space;
       border-right: 20px solid $c-space;
+      border-left: 20px solid $c-space;
       padding: 15px 15px 0 15px;
     }
     &_decor {
       position: absolute;
-      top: 0;
-      right: 0;
-      max-width: 310px;
       max-height: 310px;
+      max-width: 310px;
+      right: 0;
+      top: 0;
       @media screen and (max-width: $desktop) {
-        max-width: 250px;
         max-height: 250px;
+        max-width: 250px;
       }
       @media screen and (max-width: $phone) {
-        max-width: 180px;
         max-height: 180px;
+        max-width: 180px;
       }
     }
   }
   &__frame_line {
+    background-color: $c-space;
+    margin-right: 33px;
+    margin-left: 33px;
     max-width: 655px;
     height: 30px;
-    background-color: $c-space;
     border: none;
-    margin-left: 33px;
-    margin-right: 33px;
     @media screen and (max-width: $desktop) {
+      background-color: $c-space;
+      margin-right: 23px;
+      margin-left: 23px;
       max-width: 700px;
       height: 20px;
-      background-color: $c-space;
       border: none;
-      margin-left: 23px;
-      margin-right: 23px;
     }
   }
 }

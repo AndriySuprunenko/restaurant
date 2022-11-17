@@ -1,10 +1,11 @@
 // Import
-import Button from '../../elements/button/Button';
-import '../header/nav.css';
-import styles from './banner.module.scss';
-import { ButtonTypes } from '../../types/Button';
-import Decor from '../../assets/images/decor.png';
 import Baner from '../../assets/images/banner.png';
+import Button from '../../elements/button/Button';
+import Decor from '../../assets/images/decor.png';
+import { ButtonTypes } from '../../types/Button';
+import styles from './banner.module.scss';
+// Scss
+import '../header/nav.css';
 
 // Banner
 const Banner = () => {
