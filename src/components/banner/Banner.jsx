@@ -10,7 +10,7 @@ import Baner from '../../assets/images/banner.png';
 const Banner = () => {
   return (
     <section className={styles.banner} id="sec-1">
-      <div className='container'>
+      <div className="container">
         <div className={styles.banner__block}>
           <h1 className={styles.banner__title}>Welcome to Restaurant</h1>
           <p className={styles.banner__text}>
